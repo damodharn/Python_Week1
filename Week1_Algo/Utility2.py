@@ -1,5 +1,10 @@
+# *********************************************************************************************
+# Purpose: To create an Utility class for all static methods of Algorithmic programs.
+# Author:  Damodhar D. Nirgude.
+# Version: 3.1
+#  ************************************************************************************************
 from array import array
-
+import time
 
 class Utility2:
 
@@ -21,7 +26,7 @@ class Utility2:
 
     # #################################  Prime  Anagram #######################
     @staticmethod
-    def primeAnagram(no: object) -> object:                         # Check Prime
+    def primeAnagram(no: object) -> object:                         # Method to Check Prime No.
         arr = array('i', [])
         arr2 = array('i', [])
         count = 0
@@ -37,6 +42,7 @@ class Utility2:
                 arr.append(i)
                 arr2.append(i)
             #  ****************************  Anagram checking    ********************************
+
         print('\n*********************  Prime Anagrams  **************************************\n')
         for i in range(len(arr) - 2):
             for j in range(i + 1, len(arr) - 1):
@@ -72,5 +78,173 @@ class Utility2:
     #  *************************** Insertion Sort For Integer  **************************
 
     @staticmethod
-    def insertionsort_int():
-        arr=array
+    def insertionSort_int():
+        len = int(input("Enter the array length"))
+        arr = []
+        print("Enter the elements of an Array")
+        for i in range(len):
+            arr.append(int(input()))
+        print("U've Entered :")
+        print(arr)
+        print("After sorting Array: ")
+        startTime = time.time()
+        for i in range(1, len):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and key < arr[j]:
+                arr[j+1] = arr[j]
+                j = j-1
+                arr[j+1] = key
+        print(arr)
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed", elapsedTime, "sec\n")
+
+    #  *************************** Insertion Sort For String  **************************
+    @staticmethod
+    def insertionSort_string():
+        len = int(input("Enter the array length"))
+        arr = []
+        print("Enter the elements of an Array")
+        for i in range(len):
+            arr.append((input()))
+        print("U've Entered :")
+        print(arr)
+        print("After sorting Array: ")
+        startTime = time.time()
+        for i in range(1, len):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and key < arr[j]:
+                arr[j + 1] = arr[j]
+                j = j - 1
+                arr[j + 1] = key
+        print(arr)
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed", elapsedTime, "sec\n")
+
+    #  *************************** Bubble Sort For Integer  **************************
+    @staticmethod
+    def bubbleSortInt():
+        len = int(input("Enter a length of an array"))
+        arr = []
+        print("Enter array elements")
+        for i in range(len):
+            arr.append(int(input()))
+        print("U've Entered")
+        print(arr)
+        print("Sorted array is: ")
+        startTime = time.time()
+        for i in range(len):
+            for j in range(0, len-i-1):
+                if arr[j] > arr[j+1]:
+                    temp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = temp
+        print(arr)
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed is: ", elapsedTime, "sec\n")
+
+    #  *************************** Bubble Sort For String  **************************
+
+    @staticmethod
+    def bubbleSortString():
+        len = int(input("Enter a length of an array"))
+        arr = []
+        print("Enter array elements")
+        for i in range(len):
+            arr.append(input())
+        print("U've Entered")
+        print(arr)
+        print("Sorted array is: ")
+        startTime = time.time()
+        for i in range(len):
+            for j in range(0, len - i - 1):
+                if arr[j] > arr[j + 1]:
+                    temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+        print(arr)
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed is: ", elapsedTime, "sec\n")
+
+    #  *************************** Binary Search For Integer  **************************
+    @staticmethod
+    def binarySearchInt():
+        len = int(input("Enter a length of an array"))
+        arr = []
+        print("Enter array elements")
+        for i in range(len):
+            arr.append(int(input()))
+        print("U've Entered")
+        print(arr)
+        print("Sorted array is: ")
+        for i in range(1, len):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and key < arr[j]:
+                arr[j + 1] = arr[j]
+                j = j - 1
+                arr[j + 1] = key
+        print(arr)
+        low = 0
+        high = len - 1
+        mid = (low + high)//2
+        no = int(input("Enter a No. to be Searched"))
+        startTime = time.time()
+        while low <= high:
+            if arr[mid] == no:
+                print("No. is Found at ", mid+1, "th Position in an Array\n")
+                break
+            elif arr[mid] < no:
+                low = mid + 1
+            else:
+                high = mid - 1
+            mid = (low + high)//2
+        if low > high:
+            print("Given no", no, " not found in an array\n")
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed is: ", elapsedTime, "sec\n")
+
+        #  *************************** Binary Search For String  **************************
+    @staticmethod
+    def binarySearchString():
+        len = int(input("Enter a length of an array"))
+        arr = []
+        print("Enter array elements")
+        for i in range(len):
+            arr.append(input())
+        print("U've Entered")
+        print(arr)
+        print("Sorted array is: ")
+        for i in range(1, len):
+            key = arr[i]
+            j = i - 1
+            while j >= 0 and key < arr[j]:
+                arr[j + 1] = arr[j]
+                j = j - 1
+                arr[j + 1] = key
+        print(arr)
+        low = 0
+        high = len - 1
+        mid = (low + high) // 2
+        str = input("Enter a string to be Searched")
+        startTime = time.time()
+        while low <= high:
+            if arr[mid] == str:
+                print("String", str, " is Found at ", mid + 1, "th Position in an Array\n")
+                break
+            elif arr[mid] < str:
+                low = mid + 1
+            else:
+                high = mid - 1
+            mid = (low + high) // 2
+        if low > high:
+            print("Given string", str, " not found in an array\n")
+        stopTime = time.time()
+        elapsedTime = stopTime - startTime
+        print("Time Elapsed is: ", elapsedTime, "sec\n")
