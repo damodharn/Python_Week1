@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: To Flip Coin and print percentage of Heads and Tails.
 # Author: Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from Week1_Functional import Utility
 no = int(input("Enter a No. of time u want to flip a coin"))  # Taking input from User.

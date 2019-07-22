@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: To Find the User Entered Year is Leap Year or not and then printing it.
 # Author: Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from Week1_Functional.Utility import Utility
 

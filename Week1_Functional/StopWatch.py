@@ -2,7 +2,6 @@
 # Purpose: Program for measuring the time that elapses between
 #            the start and end clicks.
 # Author: Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 import time
 

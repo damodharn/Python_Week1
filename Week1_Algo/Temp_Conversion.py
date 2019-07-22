@@ -4,6 +4,9 @@
 #  ************************************************************************************************
 from Week1_Algo import Utility2
 
-str1 = input('Enter String 1')
-str2 = input('Enter String 2')
-Utility2.Utility2.stringanagram(str1, str2)
+temp = int(input("Input Temperature"))
+while choice != 1 or choice != 2:
+    print("Select Conversion:\n1: Celsius to Fahrenheit\n2: Fahrenheit to Celsius")
+    choice = int(input())
+conv = Utility2.temp_conv(choice, temp)
+

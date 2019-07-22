@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: Creating Utility Class for all the static methods for Functional programs.
 # Author: Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 import random
 import math

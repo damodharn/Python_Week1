@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: To Print the Nth harmonic number.
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from Week1_Functional.Utility import Utility
 no = 0

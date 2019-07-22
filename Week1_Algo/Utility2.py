@@ -1,14 +1,15 @@
 # *********************************************************************************************
 # Purpose: To create an Utility class for all static methods of Algorithmic programs.
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from array import array
 import time
-
+import sys
+sys.setrecursionlimit(5000)
 
 class Utility2:
 
+    #  *******************************  Prime No.  **************************************************
     @staticmethod
     def primeno():
         count = 0  # Taking count for printing prime no in Proper alignment
@@ -25,7 +26,7 @@ class Utility2:
                     print("\n")
                 print(count, ')', x, "")
 
-    # #################################  Prime  Anagram #######################
+# #################################  Prime  Anagram #######################
     #  *****************************  String Anagram  ***********************************
     @staticmethod
     def stringanagram(str1, str2):
@@ -36,7 +37,7 @@ class Utility2:
         else:
             print('strings are not Anagrams')
 
-    #  *************************** Insertion Sort For Integer  **************************
+#  *************************** Insertion Sort For Integer  **************************
 
     @staticmethod
     def insertionSort_int(arr, len):
@@ -54,7 +55,7 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed", elapsedTime, "sec\n")
 
-    #  *************************** Insertion Sort For String  **************************
+#  *************************** Insertion Sort For String  **************************
     @staticmethod
     def insertionSort_string(arr, len):
         print("After sorting Array: ")
@@ -71,14 +72,14 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed", elapsedTime, "sec\n")
 
-    #  *************************** Bubble Sort For Integer  **************************
+#  *************************** Bubble Sort For Integer  **************************
     @staticmethod
     def bubbleSortInt(arr, len):
 
         print("Sorted array is: ")
         startTime = time.time()
         for i in range(len):
-            for j in range(0, len-i-1):
+            for j in range(len-i-1):
                 if arr[j] > arr[j+1]:
                     temp = arr[j]
                     arr[j] = arr[j+1]
@@ -88,7 +89,7 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed is: ", elapsedTime, "sec\n")
 
-    #  *************************** Bubble Sort For String  **************************
+#  *************************** Bubble Sort For String  **************************
 
     @staticmethod
     def bubbleSortString(arr, len):
@@ -105,7 +106,7 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed is: ", elapsedTime, "sec\n")
 
-    #  *************************** Binary Search For Integer  **************************
+#  *************************** Binary Search For Integer  **************************
     @staticmethod
     def binarySearchInt(arr, no):
         lent = len(arr)
@@ -138,7 +139,7 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed is: ", elapsedTime, "sec\n")
 
-        #  *************************** Binary Search For String  **************************
+#  *************************** Binary Search For String  **************************
     @staticmethod
     def binarySearchString(arr, len, str):
 
@@ -170,7 +171,7 @@ class Utility2:
         elapsedTime = stopTime - startTime
         print("Time Elapsed is: ", elapsedTime, "sec\n")
 
-    #  *****************************  Guess the No  ******************************
+#  *****************************  Guess the No  ******************************
     @staticmethod
     def guess_no(no):
         cnt = 0
@@ -205,7 +206,7 @@ class Utility2:
         if low > high:
             print("Given no", no, " not found in an array\n")
 
-    # #################################  Prime  Anagram #######################
+# #################################  Prime  Anagram #######################
     @staticmethod
     def primeAanagram(no):                         # Method to Check Prime No.
         arr = array('i', [])  # Array to store prime no.
@@ -233,16 +234,59 @@ class Utility2:
                     if var1 == var2:
                         print(arr[i], 'and', arr[j], 'are Anagrams')
 
-#  *************************** Palindrome check   *******************************************
+        #  *************************** Palindrome check   *******************************************
         print('\n**************  Prime Palindromes *********************************************\n')
         for i in range(len(arr2)):
             if arr[i] > 10:
                 no = arr[i]
                 rev = 0
                 temp = 0
-                while no != 0:
-                    temp = no % 10
-                    rev = rev*10+temp
-                    no = no // 10
+
                 if arr[i] == rev:
                     print(arr[i], 'is a Palindrome')
+
+#  ********************************  Vending Machine  ****************************************
+    @staticmethod
+    def vending_machine(arr, amt, sum, i):
+        if amt == 0:
+            return sum
+        if amt >= arr[i]:
+            note = amt // arr[i]  # Counting No. of notes of particular amount.
+            amt = amt % arr[i]  # Updating new amount after removing high value notes.
+            sum = sum + note  # Updating total count of the Notes into the variable sum.
+            print(arr[i], "Rs. Notes: ", note)
+        i = i + 1
+        sum = Utility2.vending_machine(arr, amt, sum, i)  #
+        return sum
+#  ******************************  Day of Week  ***********************************************
+    @staticmethod
+    def day_of_week(d, m, y):
+        y0 = y - (14 - m) // 12
+        x = y0 + y0 // 4 - y0 // 100 + y0 // 400
+        m0 = m + 12 * ((14 - m) // 12) - 2
+        d0 = (d + x + 31 * m0 // 12) % 7
+        if d0 == 0:
+            print("Sunday")
+        if d0 == 1:
+            print("Monday")
+        if d0 == 2:
+            print("Tuesday")
+        if d0 == 3:
+            print("Wednesday")
+        if d0 == 4:
+            print("Thursday")
+        if d0 == 5:
+            print("Friday")
+        if d0 == 6:
+            print("Saturday")
+
+#  ***************************  Temperature Conversion  ******************************
+    @staticmethod
+    def temp_conv(case, temp):
+        if case == 1:
+            f = (temp * 9//5) + 32
+            return f
+        else:
+            c = (temp - 32) * 5/9
+            return c
+#  *****************************

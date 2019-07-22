@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: To print the Euclidean distance from the point (x, y) to the origin (0, 0).
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from Week1_Functional.Utility import Utility
 import sys

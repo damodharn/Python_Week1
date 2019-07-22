@@ -2,7 +2,6 @@
 # Purpose: To create a library for reading in 2D arrays of integers, doubles, or booleans from
 #           standard input and printing them out to standard output.
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 row = int(input('Enter No of rows'))
 col = int(input('Enter No of Columns'))

@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: Program for various Sorting techniques and Binary search.
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ************************************************************************************************
 from Week1_Algo.Utility2 import Utility2
 no = 8  # To enter into the while loop

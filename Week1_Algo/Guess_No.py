@@ -1,7 +1,6 @@
 # *********************************************************************************************
 # Purpose: Program to find a No. User thinks.
 # Author:  Damodhar D. Nirgude.
-# Version: 3.1
 #  ********************************************************************************************
 import sys
 from Week1_Algo.Utility2 import Utility2
