@@ -12,7 +12,7 @@ print("Enter to Stop Stopwatch")
 input()  # Take i/p from User to Stop the Stop watch.
 stopTime = time.time()
 sec = int(stopTime - startTime)  # Calculate elapsed time between start and stop in Sec.
-if sec < 60:  # Checking if elapsed time is greater than a minute
+if sec < 60:  # Checking if elapsed time is less than a minute
     print(sec, 'sec')
 else:
     mint = int(sec/60)  # Calculating No. of Minutes

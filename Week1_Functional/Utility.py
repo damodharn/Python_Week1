@@ -37,7 +37,8 @@ class Utility:
                 if random.randint(0, 1) == 1:  # Increment win and stake if o/p of randint is 1
                     stake += 1
                     win += 1
-                else:  # Decrement stake if o/p of randint is 1
+                else:  # Decrement stake if o/p of randint is 0
+
                     stake -= 1
             if stake == 0:
                 print('Ooo...U lost')

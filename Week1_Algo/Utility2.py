@@ -5,6 +5,7 @@
 from array import array
 import time
 import sys
+import math
 sys.setrecursionlimit(5000)
 
 class Utility2:
@@ -184,15 +185,15 @@ class Utility2:
         high = len-1
         mid = (low + high)//2
         while low <= high:
-            cnt = cnt+1
+            cnt = cnt+1  # To calculate No. of Questions asked.
             print(arr[mid])
-            print("Is this Ur No.\n 1: Yes 2: No")  # asking user about his/her no by showing array[mid] no.
+            print("Is this Ur No.\n 1: True 2: False")  # asking user about his/her no by showing array[mid] no.
             choice = int(input())
             if choice == 1:
-                print("Hurrey...I found ur No on", cnt, "Iteration")
+                print("Hurrey...I found ur No after", cnt, "questions")
                 break
             elif choice == 2:
-                print("Is ur No larger than or less than", arr[mid], "\nEnter 1: if Large 2: if Small")
+                print("Is ur No larger than than", arr[mid], "\nEnter 1: True 2: False")
                 choice2 = int(input())
                 if choice2 == 1:
                     low = mid + 1
@@ -204,7 +205,7 @@ class Utility2:
             else:
                 print("wrong choice")
         if low > high:
-            print("Given no", no, " not found in an array\n")
+            print("U gave some wrong answer/s\n")
 
 # #################################  Prime  Anagram #######################
     @staticmethod
@@ -221,7 +222,8 @@ class Utility2:
                     count -= 1
                     break
             if prime == 1:
-                arr.append(i)  # Storing each prime no. after the last added no.
+                arr.append(i)  # Storing each prime no. after the last added no. in an array.
+
                 arr2.append(i)
         #  ***********************   Anagram checking    ******************
 
@@ -229,7 +231,7 @@ class Utility2:
         for i in range(len(arr) - 2):
             for j in range(i + 1, len(arr) - 1):
                 if len(str(arr[i])) == len(str(arr[j])):
-                    var1 = ''.join(sorted(str(arr[i])))
+                    var1 = ''.join(sorted(str(arr[i])))  # Making array element a string
                     var2 = ''.join(sorted(str(arr[j])))
                     if var1 == var2:
                         print(arr[i], 'and', arr[j], 'are Anagrams')
@@ -238,12 +240,16 @@ class Utility2:
         print('\n**************  Prime Palindromes *********************************************\n')
         for i in range(len(arr2)):
             if arr[i] > 10:
-                no = arr[i]
+                nu = arr[i]
                 rev = 0
                 temp = 0
+                while nu > 0:
+                    temp = nu % 10
+                    rev = rev * 10 + temp
+                    nu = nu // 10
 
                 if arr[i] == rev:
-                    print(arr[i], 'is a Palindrome')
+                    print(arr[i], 'is prime Palindrome')
 
 #  ********************************  Vending Machine  ****************************************
     @staticmethod
@@ -252,7 +258,7 @@ class Utility2:
             return sum
         if amt >= arr[i]:
             note = amt // arr[i]  # Counting No. of notes of particular amount.
-            amt = amt % arr[i]  # Updating new amount after removing high value notes.
+            amt = amt % arr[i]  # Updating new amount after removing higher value notes.
             sum = sum + note  # Updating total count of the Notes into the variable sum.
             print(arr[i], "Rs. Notes: ", note)
         i = i + 1
@@ -282,11 +288,18 @@ class Utility2:
 
 #  ***************************  Temperature Conversion  ******************************
     @staticmethod
-    def temp_conv(case, temp):
+    def tempconvert(case, temp):
         if case == 1:
-            f = (temp * 9//5) + 32
+            f = (temp * 9//5) + 32  # Formula for Celsius to Fahrenheit conversion.
             return f
         else:
-            c = (temp - 32) * 5/9
+            c = (temp - 32) * 5/9  # Formula for  Fahrenheit to Celsius conversion.
             return c
-#  *****************************
+#  *****************************  Square Root of a No.  ******************************
+    @staticmethod
+    def sqrt(no):
+        t = no
+        epsilon = 1e-15
+        while abs(t - no/t) > epsilon * t:
+            t = (no // t + t) // 2
+        return t
