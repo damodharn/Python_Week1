@@ -27,12 +27,11 @@ class Utility2:
                     print("\n")
                 print(count, ')', x, "")
 
-# #################################  Prime  Anagram #######################
     #  *****************************  String Anagram  ***********************************
     @staticmethod
     def stringanagram(str1, str2):
-        str1 = sorted(str1)
-        str2 = sorted(str2)
+        str1 = sorted(str1)  # Sorting 1st string
+        str2 = sorted(str2)  # Sorting 2nd string
         if str1 == str2:  # comparing the sorted string, if found same then strings are anagram.
             print('Strings are anagram')
         else:
@@ -76,7 +75,6 @@ class Utility2:
 #  *************************** Bubble Sort For Integer  **************************
     @staticmethod
     def bubbleSortInt(arr, len):
-
         print("Sorted array is: ")
         startTime = time.time()
         for i in range(len):
@@ -193,7 +191,7 @@ class Utility2:
                 print("Hurrey...I found ur No after", cnt, "questions")
                 break
             elif choice == 2:
-                print("Is ur No larger than than", arr[mid], "\nEnter 1: True 2: False")
+                print("Is ur No larger than", arr[mid], "\nEnter 1: True 2: False")
                 choice2 = int(input())
                 if choice2 == 1:
                     low = mid + 1
@@ -242,7 +240,6 @@ class Utility2:
             if arr[i] > 10:
                 nu = arr[i]
                 rev = 0
-                temp = 0
                 while nu > 0:                #
                     temp = nu % 10           #
                     rev = rev * 10 + temp    # Reversing the no.
@@ -303,3 +300,17 @@ class Utility2:
         while abs(t - no/t) > epsilon:
             t = (no // t + t) // 2
         return t
+#  *********************************  To Binary  ***************************************
+    @staticmethod
+    def to_binary(num):
+        arr = []
+        while num > 0:
+            rem = num % 2
+            arr.append(int(rem))
+            num = num // 2
+        print("Binary No.: ", end="")
+        for i in range(len(arr)):
+            if (i + 1) % 4 == 0:
+                print(arr[-i-1], end=" ")
+            else:
+                print(arr[-i-1], end="")

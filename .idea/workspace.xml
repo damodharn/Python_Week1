@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4baacb3-3351-4987-a293-a28d2d2cda26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/Buble_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/Buble_Sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/DayOfWeek.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/DayOfWeek.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/Insertion_Sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/Insertion_Sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/PrimeAnagram.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/PrimeAnagram.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/Square_Root.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/Square_Root.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week1_Algo/To_Binary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week1_Algo/Utility2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Algo/Utility2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Functional/Coin_Flip.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/Coin_Flip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Functional/Distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/Distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Functional/Gambler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/Gambler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Functional/LeapYear.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/LeapYear.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week1_Functional/Power2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/Power2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week1_Functional/PrimeFactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week1_Functional/PrimeFactor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,23 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week1_Algo/Utility2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="300" column="14" lean-forward="true" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
+            <state relative-caret-position="235">
+              <caret line="195" column="32" lean-forward="true" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
               <folding>
                 <element signature="e#314#337#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -54,6 +37,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-end-line="4" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week1_Functional/Coin_Flip.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -63,58 +55,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/Distance.py">
+        <entry file="file://$PROJECT_DIR$/Week1_Algo/Buble_Sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="235">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/Gambler.py">
+        <entry file="file://$PROJECT_DIR$/Week1_Functional/PrimeFactor.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/HarmonicNo.py">
+        <entry file="file://$PROJECT_DIR$/../BridgeLabz/Algorithm_Programs/Utility.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/LeapYear.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/Power2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="250">
+              <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
               <folding>
-                <element signature="e#366#410#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Week1_Functional/PrimeFactor.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week1_Algo/To_Binary.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -153,7 +127,6 @@
         <option value="$PROJECT_DIR$/../BridgeLabz/Algorithm_Programs/Utility.py" />
         <option value="$PROJECT_DIR$/Vending_Machine.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/2DArray.py" />
-        <option value="$PROJECT_DIR$/Week1_Functional/PrimeFactor.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/PrimeNo.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/StringAnagram.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/Vending_Machine.py" />
@@ -168,13 +141,15 @@
         <option value="$PROJECT_DIR$/Week1_Algo/Insertion_Sort.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/PrimeAnagram.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/Square_Root.py" />
-        <option value="$PROJECT_DIR$/Week1_Algo/Utility2.py" />
         <option value="$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/Coin_Flip.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/Distance.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/Gambler.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/LeapYear.py" />
         <option value="$PROJECT_DIR$/Week1_Functional/Power2.py" />
+        <option value="$PROJECT_DIR$/Week1_Functional/PrimeFactor.py" />
+        <option value="$PROJECT_DIR$/Week1_Algo/To_Binary.py" />
+        <option value="$PROJECT_DIR$/Week1_Algo/Utility2.py" />
       </list>
     </option>
   </component>
@@ -231,28 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Power2">
-    <configuration name="Insertion_Sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="week1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week1_Algo" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week1_Algo/Insertion_Sort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.To_Binary">
     <configuration name="LeapYear" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="week1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -337,20 +291,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="To_Binary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="week1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week1_Algo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week1_Algo/To_Binary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Insertion_Sort" />
       <item itemvalue="Python.Square_Root" />
       <item itemvalue="Python.Temp_Conversion" />
       <item itemvalue="Python.LeapYear" />
       <item itemvalue="Python.Power2" />
+      <item itemvalue="Python.To_Binary" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.To_Binary" />
         <item itemvalue="Python.Power2" />
         <item itemvalue="Python.LeapYear" />
         <item itemvalue="Python.Temp_Conversion" />
         <item itemvalue="Python.Square_Root" />
-        <item itemvalue="Python.Insertion_Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -378,6 +353,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="678" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20699926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -546,16 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../BridgeLabz/Algorithm_Programs/Utility.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week1_Algo/DayOfWeek.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -570,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week1_Algo/Buble_Sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="10" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -612,23 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week1_Algo/Utility2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="300" column="14" lean-forward="true" selection-start-line="300" selection-start-column="14" selection-end-line="300" selection-end-column="14" />
-          <folding>
-            <element signature="e#314#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -684,10 +626,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Week1_Algo/Temp_Conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BridgeLabz/Algorithm_Programs/Utility.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Week1_Functional/PrimeFactor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week1_Algo/To_Binary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week1_Algo/Buble_Sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week1_Algo/Utility2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="195" column="32" lean-forward="true" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
+          <folding>
+            <element signature="e#314#337#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
