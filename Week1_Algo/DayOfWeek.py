@@ -5,9 +5,12 @@
 #  ************************************************************************************************
 from Week1_Algo.Utility2 import Utility2
 import sys
-print("U've Entered a Date: ")
-d = int(sys.argv[1])
-m = int(sys.argv[2])
-y = int(sys.argv[3])
-print("The Day on the Date:", d, "/", m, "/", y)
-Utility2.day_of_week(d, m, y)
+try:
+    d = int(sys.argv[1])
+    m = int(sys.argv[2])
+    y = int(sys.argv[3])
+except ValueError as e:
+    print("U've given Wrong i/p\n", e)
+else:
+    print("The Day on the Date:", d, "/", m, "/", y)
+    Utility2.day_of_week(d, m, y)

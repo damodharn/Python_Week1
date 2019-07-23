@@ -4,7 +4,10 @@
 # Author:  Damodhar D. Nirgude.
 #  ************************************************************************************************
 from Week1_Functional.Utility import Utility
-
-stake = int(input("Enter stake Value you wanted to add "))  # getting stake value from User.
-goal = int(input("Enter a goal value u wanted to achieve "))     # getting goal value from User.
-Utility.gamble(stake, goal)  # calling gamble method from Utility class.
+try:
+    stake = int(input("Enter stake Value you wanted to add "))  # getting stake value from User.
+    goal = int(input("Enter a goal value u wanted to achieve "))     # getting goal value from User.
+except ValueError as e:
+    print(e)
+else:
+    Utility.gamble(stake, goal)  # calling gamble method from Utility class.

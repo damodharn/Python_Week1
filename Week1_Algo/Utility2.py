@@ -231,8 +231,8 @@ class Utility2:
         for i in range(len(arr) - 2):
             for j in range(i + 1, len(arr) - 1):
                 if len(str(arr[i])) == len(str(arr[j])):
-                    var1 = ''.join(sorted(str(arr[i])))  # Making array element a string
-                    var2 = ''.join(sorted(str(arr[j])))
+                    var1 = sorted(str(arr[i]))  # Making array element a string
+                    var2 = sorted(str(arr[j]))
                     if var1 == var2:
                         print(arr[i], 'and', arr[j], 'are Anagrams')
 
@@ -243,10 +243,10 @@ class Utility2:
                 nu = arr[i]
                 rev = 0
                 temp = 0
-                while nu > 0:
-                    temp = nu % 10
-                    rev = rev * 10 + temp
-                    nu = nu // 10
+                while nu > 0:                #
+                    temp = nu % 10           #
+                    rev = rev * 10 + temp    # Reversing the no.
+                    nu = nu // 10            #
 
                 if arr[i] == rev:
                     print(arr[i], 'is prime Palindrome')
@@ -300,6 +300,6 @@ class Utility2:
     def sqrt(no):
         t = no
         epsilon = 1e-15
-        while abs(t - no/t) > epsilon * t:
+        while abs(t - no/t) > epsilon:
             t = (no // t + t) // 2
         return t

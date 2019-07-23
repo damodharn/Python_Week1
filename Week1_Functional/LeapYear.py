@@ -5,12 +5,16 @@
 from Week1_Functional.Utility import Utility
 
 while 1:
-    yr = int(input("Enter a year U want to check"))  # Accepting Year from User
-    if yr < 1000 or yr > 9999:   # Checking weather user entered year is 4 digit no. or not
-        print("Year must be a 4 digit No.")
+    try:
+        yr = int(input("Enter a year U want to check"))  # Accepting Year from User
+    except ValueError as e:
+        print(e)
     else:
-        leap = Utility.leap_year(yr)  # Calling leap_year function from Utility class.
-        break
+        if yr < 1000 or yr > 9999:   # Checking weather user entered year is 4 digit no. or not
+            print("Year must be a 4 digit No.")
+        else:
+            leap = Utility.leap_year(yr)  # Calling leap_year function from Utility class.
+            break
 if leap == 1:
     print(yr, "is a Leap Year")
 else:
